@@ -12,7 +12,7 @@ public class CalculoIMC {
         System.out.print("Digite seu peso em kg: ");
         Double weight = scanner.nextDouble();
 
-        var resIMC = weight / (height * height);
+        double resIMC = weight / (height * height);
 
         System.out.println("Seu IMC é: " + numberFormat.format(resIMC));
 
