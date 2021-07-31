@@ -5,14 +5,14 @@ public class CalcularValorTroco {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Valor do produto: ");
-        Double valorProdudo = scanner.nextDouble();
+        Double productValue = scanner.nextDouble();
 
         System.out.print("Valor Recebido: ");
-        Double valorRecebido = scanner.nextDouble();
+        Double recivedValue = scanner.nextDouble();
 
-        var valorTroco = valorRecebido - valorProdudo;
+        double changeValue = recivedValue - productValue;
 
-        System.out.println("Troco: " + valorTroco);
+        System.out.println("Troco: " + changeValue);
 
         scanner.close();
     };
