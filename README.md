@@ -1,4 +1,4 @@
-# algorithm-logic-with-java
+# algorithm & logic with Java
 
 Algorithm and programing logic studies with Java
 
