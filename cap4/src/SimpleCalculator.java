@@ -14,12 +14,19 @@ public class SimpleCalculator {
         System.out.print("Digite o segundo valor: ");
         Double secondNum = scanner.nextDouble();
 
-        Double res = 0.0;
+        Double res = switch (operator) {
+            case "+" -> fistNum + secondNum;
+            case "-" -> fistNum - secondNum;
+            case "*" -> fistNum * secondNum;
+            case "/" -> fistNum / secondNum;
+            default -> 0.0;
 
-        if(operator.equals("+")) res = fistNum + secondNum;
-        else if (operator.equals("-")) res = fistNum - secondNum;
-        else if (operator.equals("*")) res = fistNum * secondNum;
-        else if (operator.equals("/")) res = fistNum / secondNum;
+//        if(operator.equals("+")) res = fistNum + secondNum;
+//        else if (operator.equals("-")) res = fistNum - secondNum;
+//        else if (operator.equals("*")) res = fistNum * secondNum;
+//        else if (operator.equals("/")) res = fistNum / secondNum;
+
+        };
 
         System.out.println("Resultado: " + res);
 
